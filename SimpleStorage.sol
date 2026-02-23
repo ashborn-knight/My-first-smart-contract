@@ -12,7 +12,8 @@ contract SimpleStorage {
    }
    //Person public pat = Person({favoriteNumber: 7 ,name: "Pat"});
    Person [] public listOfPeople;
-    
+   
+   mapping(string => unit256) public nameTofavoriteNumber(),    
 function store(uint256 _favoriteNumber) public{
     myFavoriteNumber = _favoriteNumber;
    //0xd9145CCE52D386f254917e481eB44e9943F39138
@@ -26,5 +27,6 @@ function retrieve() public view returns(uint256){
 function addPerson(string memory _name, uint256 _favoriteNumber) public {
  // Person memory newPerson = Person {_favoriteNumber, _name};
   listOfPeople.push( Person (_favoriteNumber, _name) );
+  nameToFavoriteNumber {_name} = _favoriteNumber;
 }
 }
