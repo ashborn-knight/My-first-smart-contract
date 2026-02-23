@@ -10,7 +10,8 @@ contract SimpleStorage {
     uint256 favoriteNumber;
     string name;
    }
-   Person public pat = Person({favoriteNumber: 7 ,name: "Pat"});
+   //Person public pat = Person({favoriteNumber: 7 ,name: "Pat"});
+   Person [] public listOfPeople;
     
 function store(uint256 _favoriteNumber) public{
     myFavoriteNumber = _favoriteNumber;
@@ -20,5 +21,10 @@ function store(uint256 _favoriteNumber) public{
 //view , pure
 function retrieve() public view returns(uint256){
     return myFavoriteNumber;
+}
+
+function addPerson(string memory _name, uint256 _favoriteNumber) public {
+ // Person memory newPerson = Person {_favoriteNumber, _name};
+  listOfPeople.push( Person (_favoriteNumber, _name) );
 }
 }
