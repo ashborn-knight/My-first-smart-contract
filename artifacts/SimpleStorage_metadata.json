@@ -48,8 +48,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "myFavoriteNumber",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -115,11 +121,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0x8c7818ee92fbab506b9d703629a128aab244cb626b79d6e23c52e27a910d3a10",
+			"keccak256": "0x8c653dfb5c04b0c983cf46f4f0e16656f45115d815fa1cc6dd38e306b0ba94d2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://355963f8f8a0c664234c909ba38c370a3e151270f8d722c5c2f0072ae93201d9",
-				"dweb:/ipfs/QmayGbNLMup2prBwfFHpLEUxfmm2Lp8KhsPQNeERZtAGdb"
+				"bzz-raw://5b98eaa9a43085742c061ca28be84ff7f0d8afa6c59f6647946fd96dcaa4b4ff",
+				"dweb:/ipfs/QmfAcR8b1fYfqQmaeb2nmdJGb1Tczjrj39PkBpK3rA2bi6"
 			]
 		}
 	},
