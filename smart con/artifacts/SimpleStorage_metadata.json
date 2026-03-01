@@ -6,8 +6,56 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "favoriteNumber",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfPeople",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -58,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SimpleStorage.sol": "SimpleStorage"
+			"StorageFactory.sol": "SimpleStorage"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -72,12 +120,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"SimpleStorage.sol": {
-			"keccak256": "0xd420dcfcd6260ba3273aa56a30885fe34a253d08ecb0700fa0616efc7b0ce7bb",
+		"StorageFactory.sol": {
+			"keccak256": "0xc593c054a1b0ca102c1e7c86b59762e276156c7eabc667c94c8efae0fe08e3e3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bf9f9e4de1676cc5edbe33560e6e0533c2053cc32e39eb348601a781d1f6de3f",
-				"dweb:/ipfs/QmSEsjy89cfz85sj8LNrZifz7fddMEBYFAuB5EC2fdGmoW"
+				"bzz-raw://4f466c47d29efc9da4ac0fdadbc3677006db7a7ea364363bead91990c73f9b92",
+				"dweb:/ipfs/QmY4oaYnufyFSJhhYBQH8SesusBBoshxK5KPaD5at7iWrg"
 			]
 		}
 	},
