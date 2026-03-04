@@ -1,19 +1,23 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.19;
-// pragma solidity ^0.8.0;
-// pragma solidity >=0.8.0 <0.9.0;
+pragma solidity ^0.8.18;
 
-import "./SimpleStorage.sol";
+import {SimpleStorage, SimpleStorage2} from "./SimpleStorage.sol";
 
 contract StorageFactory{
     //uint256 public favouriteNumber
     //type visibility name
-    SimpleStorage public simpleStorage;
+   // SimpleStorage public simpleStorage;
+   SimpleStorage[] public listOfSimpleStorageContracts;
 
     function createSimpleStorageContract () public {
-        simpleStorage = new SimpleStorage();
+        SimpleStorage newSimpleStorageContract = new SimpleStorage();
+        listOfSimpleStorageContracts.push(newSimpleStorageContract);
    
+    }
+    function sfStore (uint256) _simplestorageIndex, uint256 _newSimpleStorageNumber) public{
+        //Address
+        //ABI   - Application Binary Interface
     }
 
 }

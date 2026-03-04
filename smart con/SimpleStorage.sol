@@ -32,3 +32,7 @@ function addPerson(string memory _name, uint256 _favoriteNumber) public {
   nameToFavoriteNumber [_name] = _favoriteNumber;
 }
 }
+
+contract SimpleStorage2 {} 
+contract SimpleStorage3 {}
+
